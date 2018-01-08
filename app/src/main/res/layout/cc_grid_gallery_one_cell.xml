@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="#000000"
+             android:padding="1dp"
+             tools:ignore="Overdraw">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/descr_image"
+        android:layout_gravity="bottom"
+        android:scaleType="centerCrop"
+        android:background="#ffffff"/>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="false"
+        android:max="100"
+        style="@style/ProgressBarStyle"
+        android:layout_gravity="center"
+        android:indeterminateDrawable="@drawable/anim_progress_icon"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/dateTime"
+        android:layout_marginLeft="@dimen/screens_standard_border"
+        android:layout_gravity="left|top"
+        android:textColor="@color/grid_gallery_labelsFore"
+        android:background="@drawable/grid_gallery_label_bcg"
+        android:textStyle="bold"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        tools:ignore="RtlHardcoded"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/place"
+        android:layout_marginLeft="@dimen/screens_standard_border"
+        android:layout_gravity="left|bottom"
+        android:textStyle="bold"
+        android:background="@drawable/grid_gallery_label_bcg"
+        android:textColor="@color/grid_gallery_labelsFore"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        tools:ignore="RtlHardcoded"/>
+</FrameLayout>

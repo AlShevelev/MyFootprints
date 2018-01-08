@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/holder_boost"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:clickable="true"
+              android:layout_alignParentBottom="true"
+              android:layout_centerHorizontal="true"
+              android:background="@color/photo_edit_filterBackgroundColor"
+              android:orientation="vertical"
+              android:padding="@dimen/photo_edit_filters_controls_padding"
+              android:visibility="gone"
+              tools:ignore="Overdraw">
+
+    <SeekBar
+        android:id="@+id/boost_value"
+        style="@style/SeekBarAppThemeColorize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="150"
+        android:mirrorForRtl="false"
+        android:progress="100"
+        tools:ignore="UnusedAttribute" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/boost_red"
+            style="@style/ButtonAppThemeColorize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="1"
+            android:text="@string/photo_edit_redL"
+            android:textSize="@dimen/photo_edit_filters_controls_label_font"
+            android:typeface="monospace" />
+
+        <Button
+            android:id="@+id/boost_green"
+            style="@style/ButtonAppThemeColorize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="2"
+            android:text="@string/photo_edit_greenL"
+            android:textSize="@dimen/photo_edit_filters_controls_label_font"
+            android:typeface="monospace" />
+
+        <Button
+            android:id="@+id/boost_blue"
+            style="@style/ButtonAppThemeColorize"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:tag="3"
+            android:text="@string/photo_edit_blueL"
+            android:textSize="@dimen/photo_edit_filters_controls_label_font"
+            android:typeface="monospace" />
+    </LinearLayout>
+
+</LinearLayout>

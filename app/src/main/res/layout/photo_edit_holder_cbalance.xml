@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/holder_cbalance"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:clickable="true"
+              android:layout_alignParentBottom="true"
+              android:layout_centerHorizontal="true"
+              android:background="@color/photo_edit_filterBackgroundColor"
+              android:orientation="vertical"
+              android:padding="@dimen/photo_edit_filters_controls_padding"
+              android:visibility="gone"
+              tools:ignore="Overdraw">
+
+    <SeekBar
+        android:id="@+id/bRed_value"
+        style="@style/SeekBarAppThemeColorize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="150"
+        android:mirrorForRtl="false"
+        android:progress="100"
+        tools:ignore="UnusedAttribute" />
+
+    <SeekBar
+        android:id="@+id/bGreen_value"
+        style="@style/SeekBarAppThemeGreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="150"
+        android:mirrorForRtl="false"
+        android:progress="100"
+        tools:ignore="UnusedAttribute" />
+
+    <SeekBar
+        android:id="@+id/bBlue_value"
+        style="@style/SeekBarAppThemeBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="150"
+        android:mirrorForRtl="false"
+        android:progress="100"
+        tools:ignore="UnusedAttribute" />
+
+</LinearLayout>

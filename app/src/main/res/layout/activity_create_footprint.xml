@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:id="@+id/mainContainer"
+             android:paddingLeft="@dimen/screens_standard_border"
+             android:paddingRight="@dimen/screens_standard_border"
+             android:paddingTop="@dimen/screens_standard_border"
+             android:paddingBottom="@dimen/screens_standard_border">
+</FrameLayout>

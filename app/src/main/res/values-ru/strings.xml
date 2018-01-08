@@ -1,0 +1,128 @@
+<resources>
+    <string name="app_name">Мои следы</string>
+    <string name="new_footprint_button">НОВЫЙ СЛЕД</string>
+    <string name="my_world_button">МОЙ МИР</string>
+    <string name="options_button">НАСТРОЙКИ</string>
+    <string name="gallery_button">ГАЛЕРЕЯ</string>
+    <string name="footprints_total_label">ВСЕГО СЛЕДОВ: %1$s</string>
+    <string name="last_photo">Последняя фотография</string>
+    <string name="main_activity_menu_settings">Настройки</string>
+
+    <string name="create_footprint_activity_title1">Выберите фотографию</string>
+    <string name="create_footprint_activity_title2">Добавьте комментарий</string>
+    <string name="create_footprint_activity_title3">Выберите место</string>
+
+    <string name="descr_image">Картинка</string>
+
+    <string name="common_location">%1$s (шир.); %2$s (долг.)</string>
+    <string name="google_map_url">http://maps.google.com/maps?z=%3$s&amp;q=loc:%1$s+%2$s</string>
+
+    <string name="createfootprint_grid_menu_refresh">Обновить</string>
+    <string name="createfootprint_grid_menu_close">Закрыть</string>
+    <string name="createfootprint_add_comment_hint">Добавьте комментарий</string>
+    <string name="createfootprint_comment_label_template">Twitter: %1$s / %2$s</string>
+
+    <string name="button_save_text">Сохранить</string>
+
+    <string name="yes_capitalize">Да</string>
+    <string name="no_capitalize">Нет</string>
+    <string name="go_to_settings">В настройки</string>
+    <string name="not_now">Не сейчас</string>
+    <string name="ok_capitalize">Ok</string>
+
+    <string name="create_footprint_dialog_cancel_footprint">Отменить создание следа?</string>
+    <string name="create_footprint_dialog_back_to_gallery">Удалить фотографию и вернуться в галерею?</string>
+    <string name="create_footprint_dialog_back_turn_on_location">Вам следут включить сервис геоданных для точного определения местоположения.</string>
+
+    <string name="message_box_cant_read_last_photo">Ой! Не удается прочитать последнюю фотографию…</string>
+    <string name="message_box_cant_read_this_photo">Не удается прочитать эту фотографию…</string>
+    <string name="message_box_cant_show_this_photo">Не удается отобразить эту фотографию…</string>
+    <string name="message_box_cant_capture_photo">Не удается начать получение фотографии…</string>
+    <string name="message_box_cant_access_gallery">Не удается получить доступ к Галерее…</string>
+    <string name="message_box_cant_save_footprint">Не удается сохранить след…</string>
+    <string name="message_box_cant_load_footprints">Не удается загрузить след…</string>
+    <string name="message_box_cant_read_footprints">Не удается прочитать след…</string>
+    <string name="message_box_cant_delete_footprint">Не удается удалить след…</string>
+    <string name="message_box_cant_send_footprint">Не удается отправить след…</string>
+    <string name="message_box_map_no_internet">Нет соединения с Интернет. Не удается обновить карту.</string>
+    <string name="message_box_map_no_gps">Сервисы Google Play недоступны. Не удается отобразить карту.</string>
+
+    <string name="message_map_no_gps_location">Вы здесь: %1$s</string>
+
+    <string name="message_map_menu_help">Для перемещения маркера используйте долгое нажатие</string>
+
+    <string name="options_activity_title">Настройки</string>
+    <string name="options_network_connections">Сетевые соединения</string>
+    <string name="options_other">Другое</string>
+    <string name="options_version">Версия</string>
+    <string name="options_social_wifi">Синхронизировать данные только по WiFi</string>
+
+    <string name="my_world_activity_title">Мой мир</string>
+    <string name="my_world_activity_close">Закрыть</string>
+    <string name="my_world_activity_help">Чтобы просмотреть след нажмите на его маркер</string>
+    <string name="my_world_map_loading">Загружается…</string>
+
+    <string name="gallery_activity_title">Галерея</string>
+    <string name="gallery_activity_action_share">Поделиться</string>
+    <string name="gallery_activity_action_edit">Редактировать</string>
+    <string name="gallery_activity_action_delete">Удалить</string>
+    <string name="gallery_activity_delete_query">Вы действительно хотите удалить этот след?</string>
+
+    <string name="edit_footprint_back_to_gallery">Отменить без сохранения?</string>
+    <string name="edit_footprint_back_help">Для перемещения маркера используйте долгое нажатие</string>
+    <string name="edit_footprint_back_to_choose_photo">Удалить фотографию и вернуться в галерею?</string>
+
+    <string name="grid_gallery_activity_title">Все мои следы</string>
+    <string name="grid_gallery_no_footprints">Следов нет</string>
+
+    <string name="send_choose_window_header">Отправить в…</string>
+
+    <string name="google_drive_auth_dialog">Мы планируем хранить резервную копию ваших следов на Google Drive.\n\nДля этого вы должны пройти процесс аутентификации, т.е. дать нам разрешение на сохранение ваших данных на Google Drive. Вероятнее всего, это понадобится сделать только один раз.\n\nПожалуйста, включите Интернет, если он не включен, подождите несколько секунд и нажмите кнопку "Ok".</string>
+
+    <string name="sync_geocoding">Загрузка геоданных</string>
+    <string name="sync_get_list_files">Подготовка данных для синхронизации</string>
+    <string name="sync_load_footprints">Загрузка следов</string>
+    <string name="sync_send_footprints">Отправка следов</string>
+    <string name="sync_connecting">Соединение</string>
+
+    <string name="splash_read_ext_storage_explanation">Ваши следы будут сохранены в памяти вашего телефона.\n\nТаким образом, вы должны разрешить нам сохранять данные на вашем устройстве.</string>
+    <string name="splash_coarse_location_explanation">Местоположение - это одна из основных частей следа.\n\nПотому, для создания следов, вы должны разрешить нам использовать сервисы определения местоположения.</string>
+    <string name="splash_read_ext_storage_denied">К сожалению, эта программа не может работать без доступа к фотографиям на вашем телефоне.\n\nВы сможете дать доступ при следующем запуске.</string>
+    <string name="splash_coarse_location_denied">К сожалению, эта программа не может работать корректно без сервисов местоположения.\n\nВы сможете дать доступ при следующем запуске.</string>
+    <string name="splash_go_to_options">Эта программа не может работать без доступа к вашим данным. Хотите ли вы перейти в настройки и дать доступ?</string>
+
+    <!-- Photo editor BEGIN -->
+    <string name="photo_editor_activity_title">Редактор фотографий</string>
+
+    <string name="photo_edit_img_desc">Картинки</string>
+    <string name="photo_edit_internal_storage">Внутреннее хранилище</string>
+    <string name="photo_edit_exit_prompt">Вы уверены, что хотите прервать редактирование?</string>
+    <string name="photo_edit_yes">Да</string>
+    <string name="photo_edit_no">Нет</string>
+    <string name="photo_edit_redL">Красный</string>
+    <string name="photo_edit_greenL">Зеленый</string>
+    <string name="photo_edit_blueL">Синий</string>
+    <string name="photo_edit_flip_v">Гориз.</string>
+    <string name="photo_edit_flip_h">Верт</string>
+    <string name="photo_edit_effect1">Яркость</string>
+    <string name="photo_edit_effect2">Поворот</string>
+    <string name="photo_edit_effect3">Оттенок</string>
+    <string name="photo_edit_effect4">Тон</string>
+    <string name="photo_edit_effect5">Гамма</string>
+    <string name="photo_edit_effect6">Интверт.</string>
+    <string name="photo_edit_effect7">Серые тона</string>
+    <string name="photo_edit_effect8">Сепия</string>
+    <string name="photo_edit_effect9">Резкость</string>
+    <string name="photo_edit_effect10">Размыть</string>
+    <string name="photo_edit_effect11">Баланс</string>
+    <string name="photo_edit_effect12">Глубина</string>
+    <string name="photo_edit_effect13">Штамп</string>
+    <string name="photo_edit_effect14">Усиление</string>
+    <string name="photo_edit_effect15">Шум</string>
+    <string name="photo_edit_effect16">Набросок</string>
+    <string name="photo_edit_effect17">Виньетка</string>
+    <string name="photo_edit_effect18">Насыш.</string>
+    <string name="photo_edit_effect19">Контраст</string>
+    <string name="photo_edit_effect20">Обрезать</string>
+    <!-- Photo editor END -->
+</resources>

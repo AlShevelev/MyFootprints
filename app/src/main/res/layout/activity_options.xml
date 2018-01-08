@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".presentationLayer.activities.options.OptionsActivity">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:background="@color/lightGray"
+        android:textColor="@android:color/primary_text_light"
+        android:text="@string/options_network_connections"
+        android:paddingBottom="@dimen/options_section_header_bottom_padding"
+        android:paddingLeft="@dimen/options_left_padding"
+        android:paddingRight="@dimen/options_left_padding"
+        android:paddingTop="@dimen/options_section_header_top_padding"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/options_left_padding"
+        android:paddingRight="@dimen/options_left_padding"
+        android:paddingTop="@dimen/options_item_top_padding"
+        android:id="@+id/createPassword"
+        android:visibility="visible">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/options_social_wifi"
+            android:id="@+id/syncOnlyViaWifiOptions"
+            android:layout_marginBottom="@dimen/options_item_bottom_padding"
+            android:layout_marginTop="@dimen/options_item_top_padding"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:background="@color/lightGray"
+        android:textColor="@android:color/primary_text_light"
+        android:text="@string/options_other"
+        android:paddingBottom="@dimen/options_section_header_bottom_padding"
+        android:paddingLeft="@dimen/options_left_padding"
+        android:paddingRight="@dimen/options_left_padding"
+        android:layout_marginTop="@dimen/options_section_header_top_margin"
+        android:paddingTop="@dimen/options_section_header_top_padding"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/options_left_padding"
+        android:paddingRight="@dimen/options_left_padding"
+        android:paddingTop="@dimen/options_item_top_padding"
+        android:paddingBottom="@dimen/options_item_bottom_padding">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/options_version"
+            android:id="@+id/textView3"
+            android:textColor="@android:color/primary_text_light"
+            android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+        <TextView
+            android:id="@+id/version_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:paddingTop="@dimen/options_item_hint_top_padding"
+            android:textColor="@android:color/primary_text_light"/>
+    </LinearLayout>
+
+<!--
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sync"/>
+-->
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/holder_contrast"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:layout_centerHorizontal="true"
+              android:clickable="true"
+              android:background="@color/photo_edit_filterBackgroundColor"
+              android:orientation="vertical"
+              android:padding="@dimen/photo_edit_filters_controls_padding"
+              android:visibility="gone"
+              tools:ignore="Overdraw">
+
+    <SeekBar
+        android:id="@+id/contrast_value"
+        style="@style/SeekBarAppThemeColorize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:mirrorForRtl="false"
+        android:progress="50"
+        tools:ignore="UnusedAttribute" />
+
+</LinearLayout>

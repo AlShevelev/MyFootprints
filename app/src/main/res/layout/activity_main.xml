@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".presentationLayer.activities.main.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ivCover"
+            android:layout_gravity="left|top"
+            android:src="@raw/default_cover"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/last_photo"
+            android:visibility="invisible"
+            tools:ignore="RtlHardcoded"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/tvTotalFootprints"
+            android:layout_gravity="left|top"
+            android:layout_marginLeft="@dimen/main_activity_total_margin"
+            android:layout_marginTop="@dimen/main_activity_total_margin"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:background="@drawable/main_label_bcg"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            tools:ignore="RtlHardcoded"/>
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pbCover"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            android:indeterminateDrawable="@drawable/anim_progress_icon"
+            />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights">
+
+            <com.syleiman.myfootprints.presentationLayer.customComponents.MainButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ibNewFootprint"
+                android:layout_weight="1"
+                app:mainButtonText="@string/new_footprint_button"
+                app:mainButtonIcon="@drawable/ic_photo_camera_black_48dp"
+                tools:ignore="NestedWeights"/>
+
+            <com.syleiman.myfootprints.presentationLayer.customComponents.MainButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ibMyWorld"
+                android:layout_weight="1"
+                app:mainButtonText="@string/my_world_button"
+                app:mainButtonIcon="@drawable/ic_language_black_48dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <com.syleiman.myfootprints.presentationLayer.customComponents.MainButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ibGallery"
+                android:layout_weight="1"
+                app:mainButtonText="@string/gallery_button"
+                app:mainButtonIcon="@drawable/ic_photo_library_black_48dp" />
+
+            <com.syleiman.myfootprints.presentationLayer.customComponents.MainButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ibOptions"
+                android:layout_weight="1"
+                app:mainButtonText="@string/options_button"
+                app:mainButtonIcon="@drawable/ic_settings_black_48dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

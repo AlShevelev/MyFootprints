@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/holder_flip"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentTop="true"
+    android:background="@color/photo_edit_filterBackgroundColor"
+    android:clickable="true"
+    android:layoutDirection="ltr"
+    android:orientation="horizontal"
+    android:padding="@dimen/photo_edit_filters_controls_padding"
+    android:visibility="gone"
+    tools:ignore="Overdraw,UnusedAttribute" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        tools:ignore="UselessParent">
+
+        <Button
+            android:id="@+id/flip_v"
+            style="@style/ButtonAppThemeColorize"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_weight="1"
+            android:text="@string/photo_edit_flip_v"
+            android:textSize="@dimen/photo_edit_filters_controls_label_font" />
+
+        <Button
+            android:id="@+id/flip_h"
+            style="@style/ButtonAppThemeColorize"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_weight="1"
+            android:text="@string/photo_edit_flip_h"
+            android:textSize="@dimen/photo_edit_filters_controls_label_font" />
+    </LinearLayout>
+
+</LinearLayout>

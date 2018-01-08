@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/holder_gamma"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentTop="true"
+    android:background="@color/photo_edit_filterBackgroundColor"
+    android:clickable="true"
+    android:layoutDirection="ltr"
+    android:orientation="horizontal"
+    android:padding="@dimen/photo_edit_filters_controls_padding"
+    android:visibility="gone"
+    tools:ignore="Overdraw,UnusedAttribute" >
+
+    <com.syleiman.myfootprints.presentationLayer.activities.photoEditor.controls.VerticalSeekBar
+        android:id="@+id/gRed_value"
+        style="@style/SeekBarAppThemeColorize"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:max="48"
+        android:mirrorForRtl="false"
+        android:progress="24"
+        android:layout_marginEnd="@dimen/photo_edit_filters_controls_padding"
+        tools:ignore="UnusedAttribute" />
+
+    <com.syleiman.myfootprints.presentationLayer.activities.photoEditor.controls.VerticalSeekBar
+        android:id="@+id/gGreen_value"
+        style="@style/SeekBarAppThemeGreen"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:max="48"
+        android:mirrorForRtl="false"
+        android:progress="24"
+        android:layout_marginEnd="@dimen/photo_edit_filters_controls_padding"
+        tools:ignore="UnusedAttribute" />
+
+    <com.syleiman.myfootprints.presentationLayer.activities.photoEditor.controls.VerticalSeekBar
+        android:id="@+id/gBlue_value"
+        style="@style/SeekBarAppThemeBlue"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:max="48"
+        android:mirrorForRtl="false"
+        android:progress="24"
+        tools:ignore="UnusedAttribute" />
+</LinearLayout>

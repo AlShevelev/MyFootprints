@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/screens_standard_border"
+    android:paddingRight="@dimen/screens_standard_border"
+    android:paddingTop="@dimen/screens_standard_border"
+    android:paddingBottom="@dimen/screens_standard_border"
+    tools:context=".presentationLayer.activities.gridGallery.GridGalleryActivity">
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/grid"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:horizontalSpacing="1dp"
+              android:numColumns="2"
+              android:stretchMode="columnWidth"
+              android:verticalSpacing="1dp"
+              android:padding="4dip"
+              android:visibility="visible"/>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_gravity="center"
+        android:indeterminateDrawable="@drawable/anim_progress_icon"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/grid_gallery_no_footprints"
+        android:id="@+id/noFootprints"
+        android:layout_gravity="center"/>
+
+</FrameLayout>

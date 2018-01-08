@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="EditTextTwitter">
+        <attr name="hint" format="string"/>         <!-- Text hint for EditText -->
+
+        <attr name="twitterLenLabelTemplate" format="string"/>    <!-- Template for text len label -->
+
+        <attr name="unmarkedTextLen" format="integer"/>     <!-- max len of unmarked text -->
+        <attr name="maxLines" format="integer"/>
+        <attr name="maxTextLen" format="integer"/>
+
+        <attr name="textInRangeLabelColor" format="color"/>             <!-- color of label when text is in unmarked len -->
+        <attr name="textOutOfRangeLabelColor" format="color"/>             <!-- color of label when text is out of unmarked len -->
+        <attr name="extraTextBackColor" format="color"/>             <!-- background color of extra text -->
+    </declare-styleable>
+
+    <declare-styleable name="MainButton">
+        <attr name="mainButtonText" format="string"/>         <!-- Button text -->
+        <attr name="mainButtonIcon" format="integer"/>    <!-- id of icon -->
+    </declare-styleable>
+</resources>

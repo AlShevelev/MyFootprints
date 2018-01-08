@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:tools="http://schemas.android.com/tools"
+          package="com.syleiman.myfootprints"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <supports-screens
+        android:largeScreens="false"
+        android:xlargeScreens="false" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS"/>
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false"/>
+    <uses-feature
+        android:name="android.hardware.autofocus"
+        android:required="false"/>
+
+    <application
+        android:name=".applicationLayer.App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+
+        <activity
+            android:name=".presentationLayer.activities.splash.SplashActivity"
+            android:theme="@style/SplashTheme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".presentationLayer.activities.main.MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".presentationLayer.activities.createAndEdit.createFootprintActivity.CreateFootprintActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".presentationLayer.activities.createAndEdit.editFootprintActivity.EditFootprintActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".presentationLayer.activities.options.OptionsActivity"
+            android:label="@string/options_activity_title"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".presentationLayer.activities.myWorld.MyWorldActivity"
+            android:label="@string/my_world_activity_title"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".presentationLayer.activities.footprintsGallery.FootprintsGalleryActivity"
+            android:label="@string/gallery_activity_title"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".presentationLayer.activities.gridGallery.GridGalleryActivity"
+            android:label="@string/grid_gallery_activity_title"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".presentationLayer.activities.photoEditor.view.PhotoEditorActivity"
+            android:label="@string/photo_editor_activity_title"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        </activity>
+
+        <service
+            android:name=".applicationLayer.services.geoLocationTracking.GeoLocationTrackingService"
+            android:enabled="true"
+            android:exported="false">
+        </service>
+        <service android:name=".applicationLayer.services.sync.auth.AuthenticatorService"
+                 tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator"/>
+        </service>
+        <service
+            android:name=".applicationLayer.services.sync.sync.SyncService"
+            android:exported="true"
+            android:process=":sync"
+            tools:ignore="ExportedService">
+            <intent-filter>
+                <action android:name="android.content.SyncAdapter"/>
+            </intent-filter>
+
+            <meta-data
+                android:name="android.content.SyncAdapter"
+                android:resource="@xml/syncadapter"/>
+        </service>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="@string/files_authority"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+        <provider
+            android:name=".applicationLayer.services.sync.sync.StubContentProvider"
+            android:authorities="@string/sync_authority"
+            android:exported="false"
+            android:syncable="true"
+            android:label="@string/app_name">
+        </provider>
+
+        <meta-data
+            android:name="AA_DB_NAME"
+            android:value="mfp.db"/>
+        <meta-data
+            android:name="AA_DB_VERSION"
+            android:value="1"/>
+        <meta-data
+            android:name="AA_MODELS"
+            android:value="com.syleiman.myfootprints.modelLayer.dbEntities.DbFootprint,
+                           com.syleiman.myfootprints.modelLayer.dbEntities.DbFootprintGeo,
+                           com.syleiman.myfootprints.modelLayer.dbEntities.DbFootprintPhoto,
+                           com.syleiman.myfootprints.modelLayer.dbEntities.DbKeyValueData,
+                           com.syleiman.myfootprints.modelLayer.dbEntities.DbLocation,
+                           com.syleiman.myfootprints.modelLayer.dbEntities.DbSyncLogHeader,
+                           com.syleiman.myfootprints.modelLayer.dbEntities.DbSyncLogData,
+                           com.syleiman.myfootprints.modelLayer.dbEntities.DbTask"/>
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyA-inauQDy7UCM409vkIs5ylMhoo_3cLw0"/>
+    </application>
+</manifest>

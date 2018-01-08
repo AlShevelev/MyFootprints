@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="darkGray">#888888</color>
+    <color name="lightGray">#cccccc</color>
+    <color name="pink">#ff8383</color>
+    <color name="lightBlue">#ADD0FF</color>
+    <color name="white">#FFFFFF</color>
+
+    <color name="grid_gallery_labelsFore">#0dff00</color>
+
+    <!-- Photo editor BEGIN -->
+    <color name="photo_edit_colorAccent">#5DAC81</color>
+    <color name="photo_edit_windowBackground">@android:color/white</color>
+    <color name="photo_edit_filters_text">@android:color/black</color>
+    <color name="photo_edit_overlay">#AA1C1C1C</color>
+    <color name="photo_edit_filterBackgroundColor">#55FFFFFF</color>
+    <!-- Photo editor END -->
+
+    <color name="map_item_text">@android:color/darker_gray</color>
+</resources>

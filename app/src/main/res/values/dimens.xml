@@ -1,0 +1,33 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="main_activity_buttons_top">20dp</dimen>
+    <dimen name="main_activity_total_margin">10dp</dimen>
+    <dimen name="actionbar_height">40dp</dimen>
+    <dimen name="screens_standard_border">5dp</dimen>
+
+    <dimen name="options_left_padding">10dp</dimen>
+    <dimen name="options_section_header_top_padding">4dp</dimen>
+    <dimen name="options_section_header_top_margin">6dp</dimen>
+    <dimen name="options_section_header_bottom_padding">3dp</dimen>
+    <dimen name="options_item_top_padding">4dp</dimen>
+    <dimen name="options_item_bottom_padding">4dp</dimen>
+    <dimen name="options_item_hint_top_padding">4dp</dimen>
+    <dimen name="options_item_bottom_margin">4dp</dimen>
+
+    <dimen name="gallery_text_fields_bottom_padding">10dp</dimen>
+
+    <!-- Photo editor BEGIN -->
+    <dimen name="photo_edit_filters_controls_padding">20dp</dimen>
+    <dimen name="photo_edit_filters_controls_label_font">18sp</dimen>
+    <dimen name="photo_edit_filters_controls_margin_bottom">5dp</dimen>
+    <dimen name="photo_edit_filters_padding">5dp</dimen>
+
+    <dimen name="photo_edit_crop_handle_size">14dp</dimen>
+    <dimen name="photo_edit_crop_touch_padding">8dp</dimen>
+    <dimen name="photo_edit_crop_min_frame_size">50dp</dimen>
+    <dimen name="photo_edit_crop_frame_stroke_weight">1dp</dimen>
+    <dimen name="photo_edit_crop_guide_stroke_weight">1dp</dimen>
+    <!-- Photo editor END -->
+</resources>

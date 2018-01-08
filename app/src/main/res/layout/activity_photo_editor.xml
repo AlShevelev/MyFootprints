@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/activity_new_photo"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:keepScreenOn="true"
+                android:background="@color/photo_edit_windowBackground"
+                tools:ignore="Overdraw">
+
+    <com.isseiaoki.simplecropview.CropImageView xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/crop_source_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/photo_edit_img_desc"
+        custom:scv_crop_mode="free"
+        custom:scv_background_color="@color/photo_edit_windowBackground"
+        custom:scv_handle_color="@color/colorAccent"
+        custom:scv_guide_color="@color/colorAccent"
+        custom:scv_overlay_color="@color/photo_edit_overlay"
+        custom:scv_frame_color="@color/colorAccent"
+        custom:scv_handle_size="@dimen/photo_edit_crop_handle_size"
+        custom:scv_touch_padding="@dimen/photo_edit_crop_touch_padding"
+        custom:scv_handle_show_mode="show_always"
+        custom:scv_guide_show_mode="show_always"
+        custom:scv_min_frame_size="@dimen/photo_edit_crop_min_frame_size"
+        custom:scv_frame_stroke_weight="@dimen/photo_edit_crop_frame_stroke_weight"
+        custom:scv_guide_stroke_weight="@dimen/photo_edit_crop_guide_stroke_weight"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/source_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:onClick="onSourceImageClick"
+        android:clickable="true"
+        android:contentDescription="@string/photo_edit_img_desc"
+        />
+
+    <RelativeLayout
+        android:id="@+id/toolbox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" >
+
+        <include layout="@layout/photo_edit_holder_save" />
+
+        <include layout="@layout/photo_edit_holder_apply_filter" />
+
+        <include layout="@layout/photo_edit_holder_hue" />
+
+        <include layout="@layout/photo_edit_holder_saturation" />
+
+        <include layout="@layout/photo_edit_holder_flip" />
+
+        <include layout="@layout/photo_edit_holder_boost" />
+
+        <include layout="@layout/photo_edit_holder_brightness" />
+
+        <include layout="@layout/photo_edit_holder_contrast" />
+
+        <include layout="@layout/photo_edit_holder_gamma" />
+
+        <include layout="@layout/photo_edit_holder_cbalance" />
+
+        <include layout="@layout/photo_edit_holder_cdepth" />
+
+        <include layout="@layout/photo_edit_holder_tint" />
+
+        <include layout="@layout/photo_edit_holder_filters" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/holder_gamma"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_alignParentBottom="true"
+              android:layout_centerHorizontal="true"
+              android:background="@color/photo_edit_filterBackgroundColor"
+              android:clickable="true"
+              android:orientation="vertical"
+              android:padding="@dimen/photo_edit_filters_controls_padding"
+              android:visibility="gone"
+              tools:ignore="Overdraw">
+
+    <SeekBar
+        android:id="@+id/gRed_value"
+        style="@style/SeekBarAppThemeColorize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="48"
+        android:mirrorForRtl="false"
+        android:progress="24"
+        tools:ignore="UnusedAttribute"
+        android:layout_marginBottom="@dimen/photo_edit_filters_controls_padding" />
+
+    <SeekBar
+        android:id="@+id/gGreen_value"
+        style="@style/SeekBarAppThemeGreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="48"
+        android:mirrorForRtl="false"
+        android:progress="24"
+        tools:ignore="UnusedAttribute"
+        android:layout_marginBottom="@dimen/photo_edit_filters_controls_padding" />
+
+    <SeekBar
+        android:id="@+id/gBlue_value"
+        style="@style/SeekBarAppThemeBlue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="48"
+        android:mirrorForRtl="false"
+        android:progress="24"
+        tools:ignore="UnusedAttribute" />
+</LinearLayout>

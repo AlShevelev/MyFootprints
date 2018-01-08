@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:editTextTwitter="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_height="match_parent"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/screens_standard_border"
+              android:paddingRight="@dimen/screens_standard_border"
+              android:paddingTop="@dimen/screens_standard_border">
+
+    <!-- Map area -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.75"
+        tools:ignore="InefficientWeight">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/mapContainer">
+
+            <!-- Map'll be rendered here -->
+        </FrameLayout>
+
+        <com.syleiman.myfootprints.presentationLayer.customComponents.progress.MapProgressControl
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+    <!-- Toolbar area -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_save_text"
+            android:id="@+id/btnSave"
+            android:layout_alignParentEnd="true"
+            style="@style/BlueButton"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:enabled="false"
+            tools:ignore="RelativeOverlap"/>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/tbPhoto"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_photo"
+            android:background="#00ffffff"
+            android:scaleType="centerCrop"  />
+    </RelativeLayout>
+
+</LinearLayout>

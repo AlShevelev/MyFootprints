@@ -1,0 +1,58 @@
+<resources>
+    <!-- Splash background -->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_bcg</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <item name="android:actionBarSize">@dimen/actionbar_height</item>
+        <item name="actionBarSize">@dimen/actionbar_height</item>
+        <item name="actionBarStyle">@style/AppTheme.ActionBar</item>
+    </style>
+
+    <!-- Action Bar Styles -->
+    <style name="AppTheme.ActionBar" parent="@style/Widget.AppCompat.ActionBar">
+        <item name="background">@raw/actionbar_bcg</item>
+
+        <item name="android:titleTextStyle">@style/AppTheme.ActionBar.TitleTextStyle</item>
+        <item name="android:subtitleTextStyle">@style/AppTheme.ActionBar.Subtitle</item>
+
+        <item name="titleTextStyle">@style/AppTheme.ActionBar.TitleTextStyle</item>
+        <item name="subtitleTextStyle">@style/AppTheme.ActionBar.Subtitle</item>
+
+    </style>
+
+    <style name="AppTheme.ActionBar.TitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AppTheme.ActionBar.Subtitle">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Progress bar for images -->
+    <style name="ProgressBarStyle" parent="@android:style/Widget.ProgressBar.Small"/>
+
+    <!-- Blue button -->
+    <style name="BlueButton" parent="@android:style/Widget.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:background">@drawable/blue_button_bcg</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Progress dialog -->
+    <style name="full_screen_dialog" parent="@android:style/Theme.Translucent">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+    <!-- Progress dialog end -->
+</resources>

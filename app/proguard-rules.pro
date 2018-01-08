@@ -1,0 +1,3 @@
+-dontobfuscate
+-dontwarn com.google.**
+-keep class com.syleiman.myfootprints.** { *; }

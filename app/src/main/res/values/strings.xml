@@ -1,0 +1,134 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="sync_account_type" translatable="false">syleiman.com</string>
+    <string name="sync_authority" translatable="false">com.syleiman.myfootprints.provider</string>
+    <string name="sync_account" translatable="false">sync_account</string>
+
+    <string name="files_authority" translatable="false">com.syleiman.myfootprints.fileprovider</string>
+
+    <string name="app_name">My Footprints</string>
+    <string name="new_footprint_button">NEW FOOTPRINT</string>
+    <string name="my_world_button">MY WORLD</string>
+    <string name="options_button">OPTIONS</string>
+    <string name="gallery_button">GALLERY</string>
+    <string name="footprints_total_label">FOOTPRINTS TOTAL: %1$s</string>
+    <string name="last_photo">Last photo</string>
+    <string name="main_activity_menu_settings">Settings</string>
+
+    <string name="create_footprint_activity_title1">Select photo</string>
+    <string name="create_footprint_activity_title2">Add comment</string>
+    <string name="create_footprint_activity_title3">Set location</string>
+
+    <string name="descr_image">Image</string>
+
+    <string name="common_location">%1$s (lat.); %2$s (long.)</string>
+    <string name="google_map_url">http://maps.google.com/maps?z=%3$s&amp;q=loc:%1$s+%2$s</string>
+
+    <string name="createfootprint_grid_menu_refresh">Refresh</string>
+    <string name="createfootprint_grid_menu_close">Close</string>
+    <string name="createfootprint_add_comment_hint">Add comment</string>
+    <string name="createfootprint_comment_label_template">Twitter: %1$s / %2$s</string>
+
+    <string name="button_save_text">Save</string>
+
+    <string name="yes_capitalize">Yes</string>
+    <string name="no_capitalize">No</string>
+    <string name="go_to_settings">Go to Settings</string>
+    <string name="not_now">Not now</string>
+    <string name="ok_capitalize" tools:ignore="ButtonCase,Typos">Ok</string>
+
+    <string name="create_footprint_dialog_cancel_footprint">Cancel footprint creation?</string>
+    <string name="create_footprint_dialog_back_to_gallery">Remove photo and return to gallery?</string>
+    <string name="create_footprint_dialog_back_turn_on_location">You should enable the Location Services to refine your location</string>
+
+    <string name="message_box_cant_read_last_photo">Oh! Can\'t read last photo. Sorry…</string>
+    <string name="message_box_cant_read_this_photo">Can\'t read this photo. Sorry…</string>
+    <string name="message_box_cant_show_this_photo">Can\'t show this photo. Sorry…</string>
+    <string name="message_box_cant_capture_photo">Can\'t start photo capturing. Sorry…</string>
+    <string name="message_box_cant_access_gallery">Can\'t access gallery. Sorry…</string>
+    <string name="message_box_cant_save_footprint">Can\'t save footprint. Sorry…</string>
+    <string name="message_box_cant_load_footprints">Can\'t load footprints. Sorry…</string>
+    <string name="message_box_cant_read_footprints">Can\'t read footprints. Sorry…</string>
+    <string name="message_box_cant_delete_footprint">Can\'t delete footprint. Sorry…</string>
+    <string name="message_box_cant_send_footprint">Can\'t send footprint. Sorry…</string>
+    <string name="message_box_map_no_internet">No Internet connection. Can\'t update map.</string>
+    <string name="message_box_map_no_gps">Google Play Services is unavailable. Can\'t show map.</string>
+
+    <string name="message_map_no_gps_location">You are here: %1$s</string>
+
+    <string name="message_map_menu_help">Use long tap to set location options</string>
+
+    <string name="options_activity_title">Options</string>
+    <string name="options_network_connections">Network connections</string>
+    <string name="options_other">Other</string>
+    <string name="options_version">Version</string>
+    <string name="options_social_wifi">Sync data via WiFi only</string>
+
+    <string name="my_world_activity_title">My World</string>
+    <string name="my_world_activity_close">Close</string>
+    <string name="my_world_activity_help">Tap on marker to view footprint</string>
+    <string name="my_world_map_loading">Loading…</string>
+
+    <string name="gallery_activity_title">Gallery</string>
+    <string name="gallery_activity_action_share">Share</string>
+    <string name="gallery_activity_action_edit">Edit</string>
+    <string name="gallery_activity_action_delete">Delete</string>
+    <string name="gallery_activity_delete_query">Are you sure you want to delete this footprint?</string>
+
+    <string name="edit_footprint_back_to_gallery">Cancel without saving?</string>
+    <string name="edit_footprint_back_help">Use long tap to move location options</string>
+    <string name="edit_footprint_back_to_choose_photo">Remove photo and go to gallery?</string>
+
+    <string name="grid_gallery_activity_title">All my footprints</string>
+    <string name="grid_gallery_no_footprints">There are no footprints</string>
+
+    <string name="send_choose_window_header">Send to…</string>
+
+    <string name="google_drive_auth_dialog" tools:ignore="Typos">We will keep a backup of your photos on a GoogleDrive.\n\nTo do this you have to go through the authentication process, i.e., give us permission to access your GoogleDrive. Most likely, it will need to make only once.\n\nPlease turn on the Internet if it is not turned on and wait a few seconds before pressing the "Ok" button.</string>
+
+    <string name="sync_geocoding">Loading geographic data</string>
+    <string name="sync_get_list_files">Prepare data to sync</string>
+    <string name="sync_load_footprints">Load footprints</string>
+    <string name="sync_send_footprints">Send footprints</string>
+    <string name="sync_connecting">Connecting</string>
+
+    <string name="splash_read_ext_storage_explanation">Your footprints will be stored in your phone storage.\n\nSo you must grant access to the data storage of your device.</string>
+    <string name="splash_coarse_location_explanation">Location is the most important part of footprint.\n\nSo, to create footprints you must grant access to location tracking on your device.</string>
+    <string name="splash_read_ext_storage_denied">Unfortunately, this app may not work correctly without access to the data storage on your device.\n\nYou are able to grant access next time.</string>
+    <string name="splash_coarse_location_denied">Unfortunately, this app may not work correctly without access to your location.\n\nYou are able to grant access next time.</string>
+    <string name="splash_go_to_options">This app can\'t work without permissions. Would you like to open app settings to grant permissions?</string>
+
+    <!-- Photo editor BEGIN -->
+    <string name="photo_editor_activity_title">Photo editor</string>
+
+    <string name="photo_edit_img_desc">Images</string>
+    <string name="photo_edit_internal_storage">Internal storage</string>
+    <string name="photo_edit_exit_prompt">Are you sure that you want to close editor?</string>
+    <string name="photo_edit_yes">Yes</string>
+    <string name="photo_edit_no">No</string>
+    <string name="photo_edit_redL">Red</string>
+    <string name="photo_edit_greenL">Green</string>
+    <string name="photo_edit_blueL">Blue</string>
+    <string name="photo_edit_flip_v">Horizon.</string>
+    <string name="photo_edit_flip_h">Vertical</string>
+    <string name="photo_edit_effect1">Brightness</string>
+    <string name="photo_edit_effect2">Flip</string>
+    <string name="photo_edit_effect3">Hue</string>
+    <string name="photo_edit_effect4">Tint</string>
+    <string name="photo_edit_effect5">Gamma</string>
+    <string name="photo_edit_effect6">Invert</string>
+    <string name="photo_edit_effect7">Grayscale</string>
+    <string name="photo_edit_effect8">Sepia</string>
+    <string name="photo_edit_effect9">Sharpen</string>
+    <string name="photo_edit_effect10">Blur</string>
+    <string name="photo_edit_effect11">Balance</string>
+    <string name="photo_edit_effect12">Depth</string>
+    <string name="photo_edit_effect13">Emboss</string>
+    <string name="photo_edit_effect14">Boost</string>
+    <string name="photo_edit_effect15">Noise</string>
+    <string name="photo_edit_effect16">Sketch</string>
+    <string name="photo_edit_effect17">Vignette</string>
+    <string name="photo_edit_effect18">Saturation</string>
+    <string name="photo_edit_effect19">Contrast</string>
+    <string name="photo_edit_effect20">Crop</string>
+    <!-- Photo editor END -->
+</resources>

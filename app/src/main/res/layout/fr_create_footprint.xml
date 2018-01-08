@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:editTextTwitter="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_height="match_parent"
+              android:layout_width="match_parent"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/screens_standard_border"
+              android:paddingRight="@dimen/screens_standard_border"
+              android:paddingTop="@dimen/screens_standard_border"
+              android:descendantFocusability="beforeDescendants"
+              android:focusableInTouchMode="true">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/scrollView"
+        android:layout_weight="0.75"
+        android:fillViewport="false"
+        android:background="#00ffffff">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- comment field -->
+            <com.syleiman.myfootprints.presentationLayer.customComponents.editTextTwitter.EditTextTwitter
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/etComment"
+                editTextTwitter:hint = "@string/createfootprint_add_comment_hint"
+                editTextTwitter:twitterLenLabelTemplate = "@string/createfootprint_comment_label_template"
+                editTextTwitter:unmarkedTextLen = "140"
+                editTextTwitter:maxLines = "500"
+                editTextTwitter:maxTextLen = "500"
+                editTextTwitter:textInRangeLabelColor = "@color/darkGray"
+                editTextTwitter:textOutOfRangeLabelColor = "@color/pink"
+                editTextTwitter:extraTextBackColor = "@color/lightBlue" />
+
+            <!-- Footprint's photo -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:id="@+id/imageFrame">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/photo"
+                    android:adjustViewBounds="true"/>
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progressBar"
+                    android:visibility="invisible"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:indeterminateDrawable="@drawable/anim_progress_icon"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/closePhotoButton"
+                    android:src="@drawable/ic_close_on_image"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    />
+
+                <ImageView
+                    android:id="@+id/editPhotoButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    editTextTwitter:srcCompat="@drawable/ic_edit_on_image"
+                    android:layout_below="@+id/photo"
+                    android:layout_toStartOf="@+id/closePhotoButton"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="5dp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Toolbar -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button_save_text"
+            android:id="@+id/btnSave"
+            android:layout_alignParentEnd="true"
+            style="@style/BlueButton"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:enabled="false"
+            tools:ignore="RelativeOverlap"/>
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/tbMap"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/ic_map_marker"
+            android:background="#00ffffff"
+            android:scaleType="centerCrop"/>
+    </RelativeLayout>
+
+</LinearLayout>
